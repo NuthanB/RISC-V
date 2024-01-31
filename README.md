@@ -1,28 +1,19 @@
 # RISC-V
-# List Processing Program
+# Number Guessing Game in OCaml
 
-## Description
+This is a simple text-based number guessing game implemented in OCaml. The program, named `Random.ml`, generates a random number between 0 and 99, and the player has to guess the number.
 
-This Python program accepts a list of integers from the user and processes it according to the following criteria:
+## How to Run
 
-1. Accepts a list of integers from the user.
-2. Emits an error message if the length of the list is not a multiple of 10.
-3. Returns or prints a list of integers based on the input list, with items at positions that are multiples of 2 or 3 removed.
+1. Make sure you have OCaml installed on your system. If not, you can download and install it from the official website: https://ocaml.org/docs/install.html
 
-The program ensures that the input list length is a multiple of 10. If not, it raises a ValueError with an appropriate error message.
+2. Save the OCaml code provided in a file named `Random.ml`.
 
-The program includes a `process_list` function that implements the processing logic based on the given criteria.
+3. Compile the OCaml code using the OCaml compiler. You can use the following command:
 
-## Usage
+   ```sh
+   ocamlopt -o guess_number Random.ml
 
-1. Run the Python script `list_processing.py`.
-2. Enter a list of integers when prompted.
-3. The program will process the input list and print the processed list if it meets the criteria. If the input list length is not a multiple of 10, it will emit an error message.
-
-## Testing
-
-The program includes a robust testing suite using the `unittest` module to ensure the correctness of the `process_list` function. The tests cover various scenarios, including valid input, invalid input (length not a multiple of 10), and an empty input list.
-
-To run the tests:
-python -m unittest list_processing.py
-Feel free to contribute or raise any issues in the repository.
+This will generate an executable named guess_number.
+Run the executable:
+./guess_number
