@@ -16,4 +16,5 @@ let () =
     | Some _ -> print_endline "Congratulations, you guessed it!"
     | None -> print_endline "Error: Input ended unexpectedly."
   in
+  
   guess_number ()
